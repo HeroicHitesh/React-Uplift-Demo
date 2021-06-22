@@ -11,8 +11,8 @@ export default function LearnList() {
   ];
   return (
     <ul>
-      {learnThis.map((tech) => (
-        <li>{tech}</li>
+      {learnThis.map((tech, index) => (
+        <li key={index}>{tech}</li>
       ))}
     </ul>
   );
